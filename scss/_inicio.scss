@@ -1,0 +1,125 @@
+//INICIO DE PAGINA INDEX
+
+
+// CARRUSEL
+.imagen_carousel{
+    width: 100%;
+}
+
+
+//NOMBRE RECETAS EN CARRUSEL
+.titulo_slides{
+    color: #40241E;
+    background-color: wheat;
+    width: 150px;
+    height: 100%;
+    padding: 5px;
+    font-size: larger;
+    border-radius: 10px;
+    margin-left: 750px;
+}
+
+
+//CATEGORIAS PAGINA DE INICIO
+.categorias_inicio{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}    
+
+.categorias_inicio__titulo{
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+}
+
+.categorias_inicio__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    
+} 
+
+.categoria_inicio__box--unidad {
+    width: 220px;
+    height: 370px;
+    border-radius: 10%;
+    background-size: cover;
+    position: relative;
+}
+
+.categoria_inicio__box--unidad:before {
+    border-radius: 10%;
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(36, 34, 34, 0.6);
+}
+
+.categoria_salados{
+    background-image: url(../multimedia/salados.jpg);
+}
+.categoria_masas{
+    background-image: url(../multimedia/masas.jpg);
+}
+.categoria_tortas{
+    background-image: url(../multimedia/tortas.jpg);
+}
+.categoria_tartas{
+    background-image: url(../multimedia/tartas.jpg);
+}
+.categoria_postres{
+    background-image: url(../multimedia/postres.jpg);
+}
+
+.categorias_inicio__box--titulo_categorias{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Amatic SC', cursive;    
+    font-size: xx-large;
+    border-radius: 5%;
+    color: white;
+}
+
+
+// TITULO ULTIMAS RECETAS 
+.titulo_ulti_recetas{
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: xxx-large;
+}
+
+
+
+
+
+
+//ULTIMAS RECETAS AÑADIDAS
+.ultimas_recetas{
+    padding: 10px;
+    
+    .ultimas_recetas__box--imagen_receta{
+        width: 310px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+    .ultimas_recetas__box--titulo_receta{
+        color: #40241E;
+        font-family: 'Abel', sans-serif;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,49 @@
+//PAGINAS DE LAS CATEGORIAS 
+
+
+.paginas_categorias{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: start;
+    
+    .box_imagenes_titulo{
+        padding: 10px;
+    }
+    
+    .imagen_receta_categoria{
+        border-radius: 20px;
+        width: 310px;
+        height: 200px;
+    }
+    
+    .titulo_receta_categoria{
+        color: #40241E;
+        font-family: 'Abel', sans-serif;
+        text-align: center;
+    }
+}
+
+.card{
+    height: 27rem;
+    margin-top: 20px;
+    padding: 3px;
+    border-radius: 10px;
+
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .btn{
+            background-color: pink;
+            border-color: #40241E;
+            color: #40241E;
+        }
+        .btn:hover{
+            transform: scale(1.2);
+        }
+    }
+}

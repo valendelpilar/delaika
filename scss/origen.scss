@@ -1,0 +1,89 @@
+@import "reseteo";
+@import "inicio";
+@import "categorias";
+@import "recetas";
+@import "responsive";
+
+
+
+// BARRA DE NAVEGACION CATEGORIAS 
+    .navbar{
+        background-color: #fae5eb;
+        padding-left: 10%;
+        
+        ul.navbar-nav li{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-column-gap: 3%;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px;
+            
+            a{
+                text-decoration: none;
+                color: #40241E;
+                font-size: x-large;
+            } 
+            
+            a:hover{
+                border-radius: 10px;
+                color: #40241E;
+                transform: scale(1.5);
+            } 
+        }   
+    }    
+
+
+body{
+    background-image: linear-gradient(to bottom,#f8f8f8, #fae5eb);
+}
+
+
+main{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+    background-color: #fae5eb;
+    font-family: 'Open Sans Condensed', sans-serif;
+        
+} 
+
+
+//PARRAFOS Y TEXTOS 
+
+// TITULOS PAG INICIO, INGREDIENTES Y PROCEDIMIENTOZz
+h2{
+    margin-left: 20px;
+    color: #40241E;
+    font-family: 'Abel', sans-serif;
+    font-size: xx-large;
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+// NOMBRES RECETAS EN INICIO ULTIMAS RECETAS Y PAGINAS CATEGORIAS
+h3{
+    color: #40241E;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+
+// TEXTO EN EL FOOTER 
+h5{
+    font-size: medium;
+}
+
+
+
+h1{
+    font-family: 'Abel', sans-serif;
+
+    // display: none;
+}

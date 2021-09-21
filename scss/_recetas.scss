@@ -1,0 +1,46 @@
+//PAGINA DE CADA RECETA
+
+
+.receta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5%;
+    grid-template-areas:
+    ". titulo . . ."
+    ". foto receta receta ."
+    ". foto receta receta .";
+    padding: 2%;
+    
+    .receta__nombre{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+        grid-area: titulo;
+        font-size: xx-large;
+
+    }
+    
+    .receta__imagen{
+        grid-area: foto;
+        border-radius: 10%;
+        width: 400px;
+        height: 300px;
+
+    }
+    
+    .receta__box_ingredientes_procedimiento{
+        grid-area: receta;
+        
+        .receta__box--titulo_procedimiento{
+            font-family: 'Abel', sans-serif;
+            margin-top: 5%;
+        }
+
+        .receta__box--titulo_ingredientes{
+            font-family: 'Abel', sans-serif;
+        }
+
+        .receta__box--procedimiento{
+            margin-left: 20px;
+        }
+    }    
+}
+

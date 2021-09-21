@@ -1,0 +1,168 @@
+//ADAPTACION A PANTALLAS
+
+
+//CELULARES
+@media (max-width:767px){
+    
+    .categorias_inicio__box{
+        margin-top: 5%;
+        margin-bottom: 2%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+    } 
+
+    .categoria_inicio__box--unidad {
+        width: 150px;
+        height: 200px;
+        margin: 5%;
+        border-radius: 10%;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .receta {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        
+        .receta__imagen{
+            padding: 2%;
+            border: none;
+            border-radius: 15%;
+            width: 350px;
+            height: 250px;
+        }
+    }
+
+    
+    .ultimas_recetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar{
+        padding-left: 0%;
+    }
+    
+    .foto_pagina{
+        display: none;
+    }
+
+    .logotipo{
+        display: block;
+    }
+    
+    h3{
+        font-size: x-large;
+    }
+}
+
+
+//CELULARES LANDSCAPE
+@media (max-width:767px) and (orientation: landscape){
+
+    .categorias_inicio__box--unidad {
+        width: 100px;
+        height: 150px;
+        margin: 5%;
+        border-radius: 10%;
+        background-size: cover;
+        position: relative;
+    }
+
+    .foto_pagina{
+        display: none;
+    }
+
+    .logotipo{
+        display: block;
+    }
+
+    .navbar{
+        padding-left: 0%;
+    }
+
+    .ultimas_recetas{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    h3{
+        font-size: x-large;
+    }
+}
+
+
+//TABLETS
+@media (min-width:768px) and (max-width: 991px){
+    
+    .categorias_inicio__box--unidad {
+        width: 150px;
+        height: 200px;
+        margin: 5%;
+        border-radius: 10%;
+        background-size: cover;
+        position: relative;
+    }
+    
+    body{
+        width: 110%;
+    }
+
+    .ultimas_recetas{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .foto_pagina{
+        display: block;
+    }
+
+    .logotipo{
+        display: none;
+    }
+
+    h3{
+        font-size: xx-large;
+    }
+}
+
+
+//COMPUTADORAS
+@media (min-width:992px){
+
+    .foto_pagina{
+        display: block;
+    }
+    
+    .logotipo{
+        display: none;
+    }
+    
+    .ultimas_recetas{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        
+        .ultimas_recetas__box--imagen_receta:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    // .imagen_receta_categoria:hover{
+    //     transform: scale(1.1);
+    // }
+
+    h3{
+        font-size: x-large;
+    }
+}
+
