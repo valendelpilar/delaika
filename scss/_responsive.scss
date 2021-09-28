@@ -56,6 +56,14 @@
         display: block;
     }
     
+    .titulo_pagina_principal{
+        font-size: xx-large;
+    }
+
+    .titulo_ulti_recetas{
+        font-size: xx-large;
+    }
+
     h3{
         font-size: x-large;
     }
@@ -90,8 +98,23 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
+
+        .ultimas_recetas__box_receta{
+            .ultimas_recetas__box--imagen_receta{
+                padding: 5px;
+            }
+        }
     }
     
+    .titulo_pagina_principal{
+        font-size: xx-large;
+    }
+
+    .titulo_ulti_recetas{
+        font-size: xx-large;
+    }
+
+
     h3{
         font-size: x-large;
     }
