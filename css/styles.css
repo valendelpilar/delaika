@@ -1,7 +1,10 @@
+/*ORIGEN*/
+/*RESETEO DE CONFIGURACIONES*/
 * {
   margin: 0;
   padding: 0; }
 
+/*INICIO DE PAGINA INDEX*/
 .imagen_carousel {
   width: 100%; }
 
@@ -93,6 +96,7 @@ h1 {
     font-family: 'Abel', sans-serif;
     text-align: center; }
 
+/*PAGINAS DE LAS CATEGORIAS */
 .paginas_categorias {
   display: flex;
   flex-flow: row wrap;
@@ -126,6 +130,7 @@ h1 {
     .card .card-body .btn:hover {
       transform: scale(1.2); }
 
+/*PAGINA DE CADA RECETA*/
 .receta {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -151,6 +156,7 @@ h1 {
     .receta .receta__box_ingredientes_procedimiento .receta__box--procedimiento {
       margin-left: 20px; }
 
+/*ADAPTACION A PANTALLAS*/
 @media (max-width: 767px) {
   .categorias_inicio__box {
     margin-top: 5%;
