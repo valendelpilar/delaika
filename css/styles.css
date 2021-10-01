@@ -1,4 +1,3 @@
-/*ORIGEN*/
 /*RESETEO DE CONFIGURACIONES*/
 * {
   margin: 0;
@@ -94,7 +93,8 @@ h1 {
   .ultimas_recetas .ultimas_recetas__box--titulo_receta {
     color: #40241E;
     font-family: 'Abel', sans-serif;
-    text-align: center; }
+    text-align: center;
+    margin-top: 10px; }
 
 /*PAGINAS DE LAS CATEGORIAS */
 .paginas_categorias {
@@ -264,6 +264,7 @@ h1 {
   h3 {
     font-size: x-large; } }
 
+/*ORIGEN*/
 .navbar {
   background-color: #fae5eb;
   padding-left: 10%; }
