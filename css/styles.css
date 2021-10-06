@@ -7,6 +7,9 @@
 .imagen_carousel {
   width: 100%; }
 
+.text-justify {
+  text-align: justify; }
+
 .titulo_slides {
   color: #40241E;
   background-color: wheat;
@@ -136,7 +139,7 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 5%;
   grid-template-areas: ". titulo . . ." ". foto receta receta ." ". foto receta receta .";
-  padding: 2%; }
+  padding: 3%; }
   .receta .receta__nombre {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-area: titulo;
@@ -194,11 +197,14 @@ h1 {
   .logotipo {
     display: block; }
   .titulo_pagina_principal {
-    font-size: xx-large; }
+    font-size: xx-large;
+    padding: 10px; }
   .titulo_ulti_recetas {
     font-size: xx-large; }
   h3 {
-    font-size: x-large; } }
+    font-size: x-large; }
+  .titulo_categorias {
+    padding-left: 5%; } }
 
 @media (max-width: 767px) and (orientation: landscape) {
   .categorias_inicio__box--unidad {
@@ -267,7 +273,7 @@ h1 {
 /*ORIGEN*/
 .navbar {
   background-color: #fae5eb;
-  padding-left: 10%; }
+  padding-left: 2%; }
   .navbar ul.navbar-nav li {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -288,14 +294,22 @@ body {
 
 main {
   margin-top: 10px;
-  margin-bottom: 50px; }
+  margin-bottom: 300px; }
 
 footer {
+  border: 1px solid #f3d4dd;
   display: flex;
-  flex-direction: row-reverse;
-  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
   background-color: #fae5eb;
   font-family: 'Open Sans Condensed', sans-serif; }
+
+.redes_sociales {
+  padding-left: 33px;
+  width: 150px;
+  color: black; }
 
 h2 {
   margin-left: 20px;

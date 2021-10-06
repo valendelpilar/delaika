@@ -1,0 +1,23 @@
+Delaika - Pagina de recetas
+
+
+El objetivo de este trabajo es realizar una pagina de recetas, la cual esta dividida en secciones por los distintos tipos de recetas.
+
+El proyecto sera realizado en Windows 10, con la implementacion de HTML, CSS, y Bootstrap.
+
+
+El proceso consta de un mockup a mano/a computadora para presentar el diseño al cliente.
+El cliente decidira la paleta de colores para su pagina web.
+Luego ese mockup se implementa en HTML y se le da diseño con CSS.
+Para la barra de navegacion responsive usaremos Bootsrap.
+
+
+
+
+Presupuesto
+
+Diseño y maquetación de sitio HTML5 y CSS3 haciendo el sitio responsivo de home + 5 secciones para 3 dispositivos --> $37,752	
+
+Galeria de imagenes o videos en carousel --> $2,249
+
+Total --> $40,001

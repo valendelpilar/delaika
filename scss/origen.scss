@@ -10,7 +10,7 @@
 // BARRA DE NAVEGACION CATEGORIAS 
     .navbar{
         background-color: #fae5eb;
-        padding-left: 10%;
+        padding-left: 2%;
         
         ul.navbar-nav li{
             display: grid;
@@ -41,19 +41,31 @@ body{
 
 main{
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 300px;
 }
 
 
 footer{
+    border: 1px solid #f3d4dd;
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
     background-color: #fae5eb;
     font-family: 'Open Sans Condensed', sans-serif;
         
 } 
 
+.redes{
+
+}
+
+.redes_sociales{
+    padding-left: 33px;
+    width: 150px;
+    color: black;
+}
 
 //PARRAFOS Y TEXTOS 
 
@@ -88,3 +100,7 @@ h1{
 
     // display: none;
 }
+
+
+
+    
