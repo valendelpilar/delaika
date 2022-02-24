@@ -1,165 +1,209 @@
 /*RESETEO DE CONFIGURACIONES*/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*INICIO DE PAGINA INDEX*/
 .imagen_carousel {
-  width: 100%; }
+  width: 100%;
+}
 
 .text-justify {
-  text-align: justify; }
+  text-align: justify;
+}
 
 .titulo_slides {
-  color: #40241E;
+  color: #40241e;
   background-color: wheat;
   width: 150px;
   height: 100%;
   padding: 5px;
   font-size: larger;
   border-radius: 10px;
-  margin-left: 750px; }
+  margin-left: 750px;
+}
 
 .categorias_inicio {
   margin-top: 10%;
-  margin-bottom: 10%; }
+  margin-bottom: 10%;
+}
 
 .categorias_inicio__titulo {
   display: flex;
   justify-content: center;
-  font-size: xxx-large; }
+  font-size: xxx-large;
+}
 
 .categorias_inicio__box {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .categoria_inicio__box--unidad {
   width: 220px;
   height: 370px;
   border-radius: 10%;
   background-size: cover;
-  position: relative; }
+  position: relative;
+}
 
 .categoria_inicio__box--unidad:before {
   border-radius: 10%;
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(36, 34, 34, 0.6); }
+  background-color: rgba(36, 34, 34, 0.6);
+}
 
 .categoria_salados {
-  background-image: url(../multimedia/salados.jpg); }
+  background-image: url(../multimedia/salados.jpg);
+}
 
 .categoria_masas {
-  background-image: url(../multimedia/masas.jpg); }
+  background-image: url(../multimedia/masas.jpg);
+}
 
 .categoria_tortas {
-  background-image: url(../multimedia/tortas.jpg); }
+  background-image: url(../multimedia/tortas.jpg);
+}
 
 .categoria_tartas {
-  background-image: url(../multimedia/tartas.jpg); }
+  background-image: url(../multimedia/tartas.jpg);
+}
 
 .categoria_postres {
-  background-image: url(../multimedia/postres.jpg); }
+  background-image: url(../multimedia/postres.jpg);
+}
+
+.categoria_rellenos {
+  background-image: url(../multimedia/rellenos.jpg);
+}
 
 .categorias_inicio__box--titulo_categorias {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-size: xx-large;
   border-radius: 5%;
-  color: white; }
+  color: white;
+}
 
 .titulo_ulti_recetas {
   display: flex;
   justify-content: center;
-  font-size: xxx-large; }
+  font-size: xxx-large;
+}
 
 h1 {
   display: flex;
   justify-content: center;
-  font-size: xxx-large; }
+  font-size: xxx-large;
+}
 
 .ultimas_recetas {
-  padding: 10px; }
-  .ultimas_recetas .ultimas_recetas__box--imagen_receta {
-    width: 310px;
-    height: 200px;
-    border-radius: 20px; }
-  .ultimas_recetas .ultimas_recetas__box--titulo_receta {
-    color: #40241E;
-    font-family: 'Abel', sans-serif;
-    text-align: center;
-    margin-top: 10px; }
+  padding: 10px;
+}
+.ultimas_recetas .ultimas_recetas__box--imagen_receta {
+  width: 310px;
+  height: 200px;
+  border-radius: 20px;
+}
+.ultimas_recetas .ultimas_recetas__box--titulo_receta {
+  color: #40241e;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
 
 /*PAGINAS DE LAS CATEGORIAS */
 .paginas_categorias {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: flex-start; }
-  .paginas_categorias .box_imagenes_titulo {
-    padding: 10px; }
-  .paginas_categorias .imagen_receta_categoria {
-    border-radius: 20px;
-    width: 310px;
-    height: 200px; }
-  .paginas_categorias .titulo_receta_categoria {
-    color: #40241E;
-    font-family: 'Abel', sans-serif;
-    text-align: center; }
+  align-items: flex-start;
+}
+.paginas_categorias .box_imagenes_titulo {
+  padding: 10px;
+}
+.paginas_categorias .imagen_receta_categoria {
+  border-radius: 20px;
+  width: 310px;
+  height: 200px;
+}
+.paginas_categorias .titulo_receta_categoria {
+  color: #40241e;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+}
 
 .card {
   height: 27rem;
   margin-top: 20px;
   padding: 3px;
-  border-radius: 10px; }
-  .card .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .card .card-body .btn {
-      background-color: pink;
-      border-color: #40241E;
-      color: #40241E; }
-    .card .card-body .btn:hover {
-      transform: scale(1.2); }
+  border-radius: 10px;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .card-body .btn {
+  background-color: pink;
+  border-color: #40241e;
+  color: #40241e;
+}
+.card .card-body .btn:hover {
+  transform: scale(1.2);
+}
 
 /*PAGINA DE CADA RECETA*/
 .receta {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 5%;
-  grid-template-areas: ". titulo . . ."
- ". foto receta receta ."
- ". foto receta receta .";
-  padding: 3%; }
-  .receta .receta__nombre {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    grid-area: titulo;
-    font-size: xx-large; }
-  .receta .receta__imagen {
-    grid-area: foto;
-    border-radius: 10%;
-    width: 400px;
-    height: 300px; }
-  .receta .receta__box_ingredientes_procedimiento {
-    grid-area: receta; }
-    .receta .receta__box_ingredientes_procedimiento .receta__box--titulo_procedimiento {
-      font-family: 'Abel', sans-serif;
-      margin-top: 5%; }
-    .receta .receta__box_ingredientes_procedimiento .receta__box--titulo_ingredientes {
-      font-family: 'Abel', sans-serif; }
-    .receta .receta__box_ingredientes_procedimiento .receta__box--procedimiento {
-      margin-left: 20px; }
+  grid-template-areas:
+    ". titulo . . ."
+    ". foto receta receta ."
+    ". foto receta receta .";
+  padding: 3%;
+}
+.receta .receta__nombre {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  grid-area: titulo;
+  font-size: xx-large;
+}
+.receta .receta__imagen {
+  grid-area: foto;
+  border-radius: 10%;
+  width: 400px;
+  height: 300px;
+}
+.receta .receta__box_ingredientes_procedimiento {
+  grid-area: receta;
+}
+.receta
+  .receta__box_ingredientes_procedimiento
+  .receta__box--titulo_procedimiento {
+  font-family: "Abel", sans-serif;
+  margin-top: 5%;
+}
+.receta
+  .receta__box_ingredientes_procedimiento
+  .receta__box--titulo_ingredientes {
+  font-family: "Abel", sans-serif;
+}
+.receta .receta__box_ingredientes_procedimiento .receta__box--procedimiento {
+  margin-left: 20px;
+}
 
 /*ADAPTACION A PANTALLAS*/
 @media (max-width: 767px) {
@@ -170,43 +214,56 @@ h1 {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-around;
+  }
   .categoria_inicio__box--unidad {
     width: 150px;
     height: 200px;
     margin: 5%;
     border-radius: 10%;
     background-size: cover;
-    position: relative; }
+    position: relative;
+  }
   .receta {
     display: flex;
     flex-flow: column;
-    align-items: center; }
-    .receta .receta__imagen {
-      padding: 2%;
-      border: none;
-      border-radius: 15%;
-      width: 350px;
-      height: 250px; }
+    align-items: center;
+  }
+  .receta .receta__imagen {
+    padding: 2%;
+    border: none;
+    border-radius: 15%;
+    width: 350px;
+    height: 250px;
+  }
   .ultimas_recetas {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+  }
   .navbar {
-    padding-left: 0%; }
+    padding-left: 0%;
+  }
   .foto_pagina {
-    display: none; }
+    display: none;
+  }
   .logotipo {
-    display: block; }
+    display: block;
+  }
   .titulo_pagina_principal {
     font-size: xx-large;
-    padding: 10px; }
+    padding: 10px;
+  }
   .titulo_ulti_recetas {
-    font-size: xx-large; }
+    font-size: xx-large;
+  }
   h3 {
-    font-size: x-large; }
+    font-size: x-large;
+  }
   .titulo_categorias {
-    padding-left: 5%; } }
+    padding-left: 5%;
+  }
+}
 
 @media (max-width: 767px) and (orientation: landscape) {
   .categorias_inicio__box--unidad {
@@ -215,25 +272,37 @@ h1 {
     margin: 5%;
     border-radius: 10%;
     background-size: cover;
-    position: relative; }
+    position: relative;
+  }
   .foto_pagina {
-    display: none; }
+    display: none;
+  }
   .logotipo {
-    display: block; }
+    display: block;
+  }
   .navbar {
-    padding-left: 0%; }
+    padding-left: 0%;
+  }
   .ultimas_recetas {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; }
-    .ultimas_recetas .ultimas_recetas__box_receta .ultimas_recetas__box--imagen_receta {
-      padding: 5px; }
+    justify-content: center;
+  }
+  .ultimas_recetas
+    .ultimas_recetas__box_receta
+    .ultimas_recetas__box--imagen_receta {
+    padding: 5px;
+  }
   .titulo_pagina_principal {
-    font-size: xx-large; }
+    font-size: xx-large;
+  }
   .titulo_ulti_recetas {
-    font-size: xx-large; }
+    font-size: xx-large;
+  }
   h3 {
-    font-size: x-large; } }
+    font-size: x-large;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
   .categorias_inicio__box--unidad {
@@ -242,61 +311,82 @@ h1 {
     margin: 5%;
     border-radius: 10%;
     background-size: cover;
-    position: relative; }
+    position: relative;
+  }
   body {
-    width: 110%; }
+    width: 110%;
+  }
   .ultimas_recetas {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center; }
+    justify-content: center;
+  }
   .foto_pagina {
-    display: block; }
+    display: block;
+  }
   .logotipo {
-    display: none; }
+    display: none;
+  }
   h3 {
-    font-size: xx-large; } }
+    font-size: xx-large;
+  }
+}
 
 @media (min-width: 992px) {
   .foto_pagina {
-    display: block; }
+    display: block;
+  }
   .logotipo {
-    display: none; }
+    display: none;
+  }
   .ultimas_recetas {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     justify-content: space-around;
-    align-items: center; }
-    .ultimas_recetas .ultimas_recetas__box--imagen_receta:hover {
-      transform: scale(1.1); }
+    align-items: center;
+  }
+  .ultimas_recetas .ultimas_recetas__box--imagen_receta:hover {
+    transform: scale(1.1);
+  }
   h3 {
-    font-size: x-large; } }
+    font-size: x-large;
+  }
+}
 
 /*ORIGEN*/
 .navbar {
   background-color: #fae5eb;
-  padding-left: 10%; }
-  .navbar ul.navbar-nav li {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 3%;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px; }
-    .navbar ul.navbar-nav li a {
-      text-decoration: none;
-      color: #40241E;
-      font-size: x-large; }
-    .navbar ul.navbar-nav li a:hover {
-      border-radius: 10px;
-      color: #40241E;
-      transform: scale(1.5); }
+  padding-left: 10%;
+}
+.navbar ul.navbar-nav li {
+  display: grid;
+  grid-template-columns: repeat(6,2fr);
+  grid-column-gap: 3%;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+.navbar ul.navbar-nav li a {
+  text-decoration: none;
+  color: #40241e;
+  font-size: x-large;
+}
+.navbar ul.navbar-nav li a:hover {
+  border-radius: 10px;
+  color: #40241e;
+  transform: scale(1.5);
+}
+
+
 
 body {
-  background-image: linear-gradient(to bottom, #f8f8f8, #fae5eb); }
+  background-image: linear-gradient(to bottom, #f8f8f8, #fae5eb);
+}
 
 main {
   margin-top: 10px;
-  margin-bottom: 300px; }
+  margin-bottom: 300px;
+}
 
 footer {
   border: 1px solid #f3d4dd;
@@ -306,29 +396,35 @@ footer {
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: #fae5eb;
-  font-family: 'Open Sans Condensed', sans-serif; }
+  font-family: "Open Sans Condensed", sans-serif;
+}
 
 .redes_sociales {
   padding-left: 33px;
   width: 150px;
-  color: black; }
+  color: black;
+}
 
 h2 {
   margin-left: 20px;
-  color: #40241E;
-  font-family: 'Abel', sans-serif;
+  color: #40241e;
+  font-family: "Abel", sans-serif;
   font-size: xx-large;
   font-weight: lighter;
   padding-bottom: 10px;
-  padding-top: 30px; }
+  padding-top: 30px;
+}
 
 h3 {
-  color: #40241E;
-  font-family: 'Abel', sans-serif;
-  text-align: center; }
+  color: #40241e;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+}
 
 h5 {
-  font-size: medium; }
+  font-size: medium;
+}
 
 h1 {
-  font-family: 'Abel', sans-serif; }
+  font-family: "Abel", sans-serif;
+}
