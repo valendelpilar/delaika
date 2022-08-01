@@ -134,7 +134,7 @@ h1 {
   padding: 10px;
 }
 .paginas_categorias .imagen_receta_categoria {
-  border-radius: 20px;
+  border-radius: 10px;
   width: 310px;
   height: 200px;
 }
@@ -158,11 +158,12 @@ h1 {
 }
 .card .card-body .btn {
   background-color: pink;
-  border-color: #40241e;
+  border-color: pink;
   color: #40241e;
 }
 .card .card-body .btn:hover {
-  transform: scale(1.2);
+  background-color: rgb(247, 174, 186);
+
 }
 
 /*PAGINA DE CADA RECETA*/
@@ -173,9 +174,17 @@ h1 {
   grid-template-areas:
     ". titulo . . ."
     ". foto receta receta ."
-    ". foto receta receta .";
+    ". foto receta receta ."
+    ". tituloProcedimiento tituloProcedimiento tituloProcedimiento ."
+    ". procedimiento procedimiento procedimiento ."
+    ;
   padding: 3%;
 }
+
+.hola{
+  grid-area: hola;
+}
+
 .receta .receta__nombre {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   grid-area: titulo;
@@ -186,8 +195,16 @@ h1 {
   border-radius: 10%;
   width: 400px;
   height: 300px;
+  margin-top: 40px;
 }
-.receta .receta__box_ingredientes_procedimiento {
+
+.receta__box--titulo_procedimiento{
+  grid-area: tituloProcedimiento;
+}
+.receta__box--lista_ingredientes{
+  list-style: none;
+}
+.receta__box_ingredientes_procedimiento {
   grid-area: receta;
 }
 .receta
@@ -196,12 +213,19 @@ h1 {
   font-family: "Abel", sans-serif;
   margin-top: 5%;
 }
+
 .receta
   .receta__box_ingredientes_procedimiento
   .receta__box--titulo_ingredientes {
   font-family: "Abel", sans-serif;
+  margin-left: 30px;
 }
-.receta .receta__box_ingredientes_procedimiento .receta__box--procedimiento {
+/* .receta .receta__box_ingredientes_procedimiento .receta__box--procedimiento {
+  margin-left: 20px;
+} */
+
+.receta__box--procedimiento{
+  grid-area: procedimiento;
   margin-left: 20px;
 }
 
